@@ -62,3 +62,26 @@ sudo apt-get upgrade -y
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=YZzhIIJmlE0
 " target="_blank"><img src="http://img.youtube.com/vi/YZzhIIJmlE0/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="320" height="240" border="10" /></a>
+
+## Installing Node
+
+```linux
+curl -fsSL bit.ly/nodejs-min | bash
+```
+
+## Installing Mongodb
+
+```linux
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
+
+echo "deb http://repo.mongodb.org/apt/ubuntu "$(lsb_release -sc)"/mongodb-org/3.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.0.list
+
+sudo apt-get update
+
+sudo apt-get install -y mongodb-org
+```
+
+Check MongoDB Status: 
+```linux
+service mongod status
+```
