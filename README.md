@@ -87,4 +87,6 @@ service mongod status
 ```
 
 You can also stop, start, and restart MongoDB using the service command (e.g. service mongod stop, service mongod start).
-Mongod.conf file is located in /etc/mongod.conf
+* Mongod.conf file is located in /etc/mongod.conf
+* DB Path is located in /var/lib/mongodb
+* port changed to: 
