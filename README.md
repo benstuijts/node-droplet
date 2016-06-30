@@ -33,10 +33,10 @@ exit
 ```linux
 # local laptop
 brew install ssh-copy-id                            # needed on OS X
-ssh-copy-id -i ~/.ssh/waffles "deploy@104.236.44.57 -p 22" # this will prompt for the password
+ssh-copy-id -i ~/.ssh/ssh_key_file "deploy@104.236.44.57 -p 22" # this will prompt for the password
 
-ssh deploy@104.236.44.57 -i ~/.ssh/waffles -p 22
-> Enter passphrase for key '/Users/homestar/.ssh/waffles':
+ssh deploy@104.236.44.57 -i ~/.ssh/ssh_key_file -p 22
+> Enter passphrase for key '/Users/homestar/.ssh/ssh_key_file':
 ```
 
 ```linux
