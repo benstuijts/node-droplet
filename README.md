@@ -25,17 +25,17 @@ Next create a user, add the secure key, then remove remove root and password acc
 ```linux
 # remote server
 
-adduser strongbad
-adduser strongbad sudo # or wheel if sudo doesn't exist
+adduser deploy
+adduser deploy sudo # or wheel if sudo doesn't exist
 exit
 ```
 
 ```linux
 # local laptop
 brew install ssh-copy-id                            # needed on OS X
-ssh-copy-id -i ~/.ssh/waffles "strongbad@104.236.44.57 -p 22" # this will prompt for the password
+ssh-copy-id -i ~/.ssh/waffles "deploy@104.236.44.57 -p 22" # this will prompt for the password
 
-ssh strongbad@104.236.44.57 -i ~/.ssh/waffles -p 22
+ssh deploy@104.236.44.57 -i ~/.ssh/waffles -p 22
 > Enter passphrase for key '/Users/homestar/.ssh/waffles':
 ```
 
