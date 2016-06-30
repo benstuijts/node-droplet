@@ -54,8 +54,8 @@ sudo apt-get update
 sudo apt-get upgrade -y
 ```
 
-
+## More information
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=YZzhIIJmlE0
 " target="_blank"><img src="http://img.youtube.com/vi/YZzhIIJmlE0/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+alt="IMAGE ALT TEXT HERE" width="320" height="240" border="10" /></a>
