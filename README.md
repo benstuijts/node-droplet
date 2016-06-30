@@ -85,3 +85,5 @@ Check MongoDB Status:
 ```linux
 service mongod status
 ```
+
+You can also stop, start, and restart MongoDB using the service command (e.g. service mongod stop, service mongod start).
