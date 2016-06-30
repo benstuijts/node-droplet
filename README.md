@@ -35,6 +35,9 @@ exit
 brew install ssh-copy-id                            # needed on OS X
 ssh-copy-id -i ~/.ssh/ssh_key_file "deploy@104.236.44.57 -p 22" # this will prompt for the password
 
+windows:
+ssh user@lnxhost "umask 077; test -d .ssh || mkdir .ssh ; cat >> .ssh/authorized_keys || exit 1" < \\path_to_where_the_file_was_generated_from_ssh_key_gen\id_rsa.pub
+
 ssh deploy@104.236.44.57 -i ~/.ssh/ssh_key_file -p 22
 > Enter passphrase for key '/Users/homestar/.ssh/ssh_key_file':
 ```
