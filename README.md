@@ -102,3 +102,16 @@ You can also stop, start, and restart MongoDB using the service command (e.g. se
 ```linux
 sudo apt-get install nginx
 ```
+
+**/etc/nginx/sites-enabled/domain1**
+
+```linux
+server {
+    listen 80;
+    server_name domain1.com;
+    access_log /var/log/nginx/domain1.access.log;
+    location / {
+        proxy_pass    http://127.0.0.1:4000/;
+    }
+}
+```
