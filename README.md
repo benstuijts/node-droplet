@@ -115,3 +115,8 @@ server {
     }
 }
 ```
+
+```linux
+sudo service nginx restart
+```
+
